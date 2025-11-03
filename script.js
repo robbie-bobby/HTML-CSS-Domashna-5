@@ -23,11 +23,11 @@ window.addEventListener('scroll', function() {
         color6: [239, 250, 99]
     };
 
-    // Convert objects to array
+    // Convertiranje objekt vo niza
     const startArray = Object.values(startGradient);
     const endArray = Object.values(endGradient);
 
-    // Interpolate each color stop
+    // Interpoliranje na boite
     const currentGradient = startArray.map((startColor, index) => {
         const endColor = endArray[index];
 

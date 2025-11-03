@@ -1,0 +1,227 @@
+html {
+   height: auto;
+   overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.875em;
+    letter-spacing: 0.063m;
+    min-height: 100vh;
+    position: relative;
+}
+
+nav {
+    width: 100vw;
+    height: 7vh;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#nav-left {
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+#nav-left img {
+    height: 100%;
+    margin-right: 1vw;
+}
+
+#nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 7vw;
+}
+
+#nav-right button {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    transform: scaleY(0.8);
+    background: transparent;
+    border: none;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw
+}
+
+#nav-right button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, 
+        rgb(132, 80, 195),
+        rgb(100, 100, 200),
+        rgb(20, 115, 180),
+        rgb(1, 137, 150),
+        rgb(0, 170, 120),
+        rgb(0, 200, 90)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+#nav-text-container {
+    width: 40vw;
+    height: 80vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-text-container input {
+    width: 10vw;
+    height: 5vh;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: calc(12vw + 24vh);
+    text-align: center;
+    letter-spacing: 0.07em;
+    box-shadow: 0 0 calc(1vw + 2vh) rgba(0, 0, 0, 0.35);
+}
+
+#nav-text-container h2 {
+    font-size: 2.45em;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: calc(0.075vw + 0.15vh) calc(0.075vh + 0.15vh) gray;
+}
+
+#nav-text-container h1 {
+    font-size: 2.7dvw;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: calc(0.075vw + 0.15vh) calc(0.075vh + 0.15vh) gray;
+    margin: 0;
+}
+
+#nav-text-container p {
+    font-size: 1.5em;
+}
+
+#astrounaut-left {
+    width: 30vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#astrounaut-right {
+    width: 30vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 3vw;
+}
+
+section {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background: white;
+    padding: 7vh 0 4vh 0;
+    margin-bottom: 16vh;
+}
+
+.gradient-section {
+    width: auto;
+    height: 30vh;
+    border-bottom: 1px lightgray solid;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.gradient-section h3 {
+    color: black;
+    font-weight: 900;
+    font-size: 1.4em;
+    margin-bottom: 4vh;
+}
+
+.gradient-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colors {
+    width: calc(3vw + 6vh);
+    height: calc(3vw + 6vh);
+    background-color: red;
+    border-radius: 12px;
+    margin-right: 0.2vw;
+    margin-left: 0.2vw;
+}
+
+.color-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-text {
+    width: calc(2.9vw + 5.8vh);
+    height: calc(1.5vw + 3vh);
+    margin-right: 0.2vw;
+    margin-left: 0.2vw;;
+    border: none;
+    color: gray;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+footer {
+    width: 100vw;
+    height: 4vh;
+    background: linear-gradient(45deg, 
+        #845ec2,
+        #d65db1,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+    );
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
